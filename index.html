@@ -3,65 +3,110 @@
   <head>
     <meta charset="utf-8" />
     <title>Coffee</title>
-    <!-- Link Swiper's CSS -->
+
+
+    <!-- подкючение стилей слайдера - обязательная часть -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-<div class="container">
 
+      <div class="about-us-cards-background"> <!-- цвет, ширина -->
+        <div class="about-us-cards"> <!-- сам контейнер с карточками -->
+          <div class="cards-string"> <!-- ряды карточек -->
+            <div class="about-us-card"><img src="images/1.jpg" alt=""></div> <!-- картинка -->
+            <div class="about-us-card">
+              <div class="card-text-wrapper"> <!-- оборачиваю текст для отступов -->
+              <div class="card-title">Мы - профессионалы</div>
+              <div class="card-text">Бариста готовят кофе по проверенным временем технологиям, а также используют авторские рецепты.</div>
+              </div>
+            </div>
+          </div>
 
+          <div class="cards-string">
+            <div class="about-us-card">
+              <div class="card-text-wrapper">
+              <div class="card-title">Уважаем посетителей</div>
+              <div class="card-text">Персонал нашей кофейни всегда приветлив и поможет, если у вас возникнут какие-то трудности.</div>
+              </div>
+            </div>
+            <div class="about-us-card"><img src="images/2.jpg" alt=""></div>
+          </div>
 
-    <!-- Swiper -->
+          <div class="cards-string">
+            <div class="about-us-card"><img src="images/3.jpg" alt=""></div>
+            <div class="about-us-card">
+              <div class="card-text-wrapper">
+              <div class="card-title">Создаём уют</div>
+              <div class="card-text">Что может быть лучше, чем отдых в тихой и уютной обстановке кофейни в середине рабочего дня!</div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+      
+
+<!-- слайдер -->
+<div class="slider-container">
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
-        
         <div class="swiper-slide">     
             <div class="sale-card">
             <div class="upper">
+              <div class="black-cover">
                 <div class="action-header">Акция</div>
                 <div class="ten-ten">Проходит с 10 июля по 10 августа</div>
+              </div>
             </div>
-            <div class="lower"></div>
+            <div class="lower">
+              <div class="buy-two">Купи 2 кофе, получи третий в подарок!</div>
+            </div>
             </div>  
         </div>
         <div class="swiper-slide">    
             <div class="sale-card">
-            <div class="upper">
-                <div class="action-header">Акция</div>
-                <div class="ten-ten">Проходит с 10 июля по 10 августа</div>
-            </div>
-            <div class="lower"></div>
+              <div class="upper">
+                <div class="black-cover">
+                  <div class="action-header">Акция</div>
+                  <div class="ten-ten">Проходит с 10 июля по 10 августа</div>
+                </div>
+              </div>
+              <div class="lower">
+                <div class="buy-two">Купи 2 кофе, получи третий в подарок!</div>
+              </div>
             </div>  
         </div>
 
         <div class="swiper-slide">    
             <div class="sale-card">
-            <div class="upper">
-                <div class="action-header">Акция</div>
-                <div class="ten-ten">Проходит с 10 июля по 10 августа</div>
-            </div>
-            <div class="lower"></div>
+              <div class="upper">
+                <div class="black-cover">
+                  <div class="action-header">Акция</div>
+                  <div class="ten-ten">Проходит с 10 июля по 10 августа</div>
+                </div>
+              </div>
+              <div class="lower">
+                <div class="buy-two">Купи 2 кофе, получи третий в подарок!</div>
+              </div>
             </div>  
         </div>
-
-        <!-- <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div> -->
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 </div>
-    <!-- Swiper JS -->
+
+
+
+
+
+    <!-- подключаю слайдер - обязательная часть -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- скрипт -->
         <script src="script.js"></script>
   </body>
 </html>
